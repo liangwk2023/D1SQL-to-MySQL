@@ -1,0 +1,8 @@
+name = "my-d1-adapter"
+main = "src/worker.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "my-database"
+database_id = "2d523284-3ce8-4bf3-8c66-9f11bbcd497d" 
