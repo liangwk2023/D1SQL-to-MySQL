@@ -1,5 +1,7 @@
 # D1 MySQL Adapter for Cloudflare Workers
 
+我有一个想法，找一个开源的网盘存储系统，然后文件都转码成文本存储到SQL，那样的话不就白嫖存储空间了（bushi）
+
 ## 项目简介
 
 这个项目是一个适配器，用于在 Cloudflare Workers 中将 D1 SQL 数据库作为 MySQL 数据库使用。它提供了基本的 SQL 查询功能，并处理一些常见的 MySQL 和 D1 SQL 之间的语法差异。
@@ -98,10 +100,20 @@ npm install -g wrangler
 - 6.2：若是点击`Continue to Dashboard（继续处理项目）`请来到左侧栏点击`Data and Storage（数据和存储库）`右边的小箭头展开，点击`D1 Databases（D1 数据库）`，点击`Create D1 Database（创建 D1 数据库）`，名字写为`d1-mysql-adapter`，点击`Create（创建）`按钮。
 - 6.2.1：回到`Workers 和 Pages`页面，点击刚才创建的项目，然后按照6.1部署代码。
 
-### 贡献
+## 贡献
 
 欢迎任何形式的贡献！如果你有建议或发现了问题，请提交问题或拉取请求。
 
-### 许可证
+## 许可证
 
 此项目使用 MIT 许可证。请查看 [LICENSE](LICENSE) 文件以获取更多信息。
+
+## 一些小问题
+A：为何不直接KV
+Q：KV有存储限制，D1SQL存储更实用
+
+A：为啥用起来很多bug
+Q：因为AI写的，将就用，要么自己改。
+
+## 作者的一些话
+没看到类似的存储库，就写了一个，对于一些低配服务器能节省一些安装MySQL的空间，后面会增加支持的存储库格式
