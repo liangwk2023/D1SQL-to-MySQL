@@ -110,9 +110,12 @@ npm install -g wrangler
 
 ## 一些小问题
 A：为何不直接KV
+
 Q：KV有存储限制，D1SQL存储更实用
 
+
 A：为啥用起来很多bug
+
 Q：因为AI写的，将就用，要么自己改。
 
 ## 作者的一些话
