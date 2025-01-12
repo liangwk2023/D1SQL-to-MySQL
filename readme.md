@@ -95,10 +95,11 @@ npm install -g wrangler
 3. 点击 `Create（创建）` 按钮。
 4. 点击 `Create Worker（创建 Worker）` 按钮。
 5. 随便写一个名称，点击`Deploy（部署）`按钮。
-6. 至此，你也可以选择`Edit Code（编辑代码）`和`Continue to Dashboard（继续处理项目）`。
+6. 至此，你可以选择`Edit Code（编辑代码）`和`Continue to Dashboard（继续处理项目）`。
 - 6.1：若是点击`Edit Code（编辑代码）`请在worker.js输入[/blob/main/src/worker.js](src/worker.js)，新建文件`d1-mysql-adapter.js`输入[src\d1-mysql-adapter.js](/blob/main/src/d1-mysql-adapter.js)点击`Deploy（部署）`按钮就完事了，然后看6.2。
-- 6.2：若是点击`Continue to Dashboard（继续处理项目）`请来到左侧栏点击`Data and Storage（数据和存储库）`右边的小箭头展开，点击`D1 Databases（D1 数据库）`，点击`Create D1 Database（创建 D1 数据库）`，名字写为`d1-mysql-adapter`，点击`Create（创建）`按钮。
+- 6.2：若是点击`Continue to Dashboard（继续处理项目）`请来到左侧栏点击`Data and Storage（数据和存储库）`右边的小箭头展开，点击`D1 Databases（D1 数据库）`，点击`Create D1 Database（创建 D1 数据库）`，名字随意，点击`Create（创建）`按钮。
 - 6.2.1：回到`Workers 和 Pages`页面，点击刚才创建的项目，然后按照6.1部署代码。
+7.点击创建的Workers的`settings（设置）`在绑定一栏添加你的D1SQL，变量名称为`DB`，值为你们的D1数据库
 
 ## 贡献
 
