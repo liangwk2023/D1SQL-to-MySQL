@@ -6,6 +6,8 @@
 
 这个项目是一个适配器，用于在 Cloudflare Workers 中将 D1 SQL 数据库作为 MySQL 数据库使用。它提供了基本的 SQL 查询功能，并处理一些常见的 MySQL 和 D1 SQL 之间的语法差异。
 
+worker只能使用http(s)连接，所以我们需要一个工具转接接收到的tcp请求到http(s)，如果有大佬有办法在worker使用tcp协议的欢迎提交issues。
+
 ## 文件结构
 
 - `src/`
